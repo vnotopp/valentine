@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For SONUUU❤️</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", serif;
+            background: url("bg1.jpg") no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            color: #5a0033;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.75);
+            margin: 40px auto;
+            padding: 40px;
+            width: 90%;
+            max-width: 700px;
+            border-radius: 25px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-size: 26px;
+            margin-top: 20px;
+        }
+
+        .line {
+            font-size: 18px;
+            opacity: 0.85;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 12px 28px;
+            font-size: 18px;
+            margin: 12px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-family: "Times New Roman", serif;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background-color: #ff4da6;
+            color: white;
+        }
+
+        .yes:hover {
+            background-color: #ff1a8c;
+        }
+
+        .no {
+            background-color: #ffe6f2;
+            color: #8b004f;
+        }
+
+        #msg {
+            font-size: 26px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Floating koalas */
+        .floating {
+            position: fixed;
+            width: 60px;
+            opacity: 0.9;
+            animation: float 7s infinite ease-in-out;
+        }
+
+        .k1 { top: 10%; left: 5%; }
+        .k2 { top: 70%; right: 5%; }
+        .k3 { bottom: 10%; left: 40%; }
+        .k4 { top: 20%; right: 20%; }
+        .k5 { top: 50%; left: 2%; }
+        .k6 { bottom: 15%; right: 25%; }
+        .k7 { top: 75%; left: 15%; }
+        .k8 { top: 35%; right: 8%; }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-18px) rotate(3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        /* Angry koalas */
+        .angry {
+            width: 120px;
+            position: absolute;
+            bottom: 20px;
+            display: none;
+        }
+
+        #angryLeft { left: 20px; }
+        #angryRight { right: 20px; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Floating cute koalas -->
+<img src="tiger.png" class="floating k1">
+<img src="tiger.png" class="floating k2">
+<img src="tiger.png" class="floating k3">
+<img src="tiger.png" class="floating k4">
+<img src="tiger.png" class="floating k5">
+<img src="tiger.png" class="floating k6">
+<img src="tiger.png" class="floating k7">
+<img src="tiger.png" class="floating k8">
+
+
+<div class="container">
+
+    <h1>Happy Valentine's Day SONUUUU BABUUUUU❤️</h1>
+    <h2>For MY BABYY KAMAT, the best part of my life <3 </h2>
+
+    <p class="question">Will you be my Valentine?</p>
+    <p class="line">Every day with you feels special.</p>
+
+    <button class="yes" onclick="yesClicked()">Yes 💖</button>
+    <button class="no" onclick="noClicked()">No</button>
+
+    <p id="msg"></p>
+
+    <img src="angryface.png" id="angryLeft" class="angry">
+    <img src="angryface.png" id="angryRight" class="angry">
+
+</div>
+
+<script>
+function yesClicked() {
+    document.getElementById("msg").innerHTML =
+    "You just made me the happiest person ❤️<br>Can't wait to spend Valentine's with you.";
+
+    document.body.style.background =
+    "linear-gradient(to bottom, #ff9acb, #ffd6e7)";
+}
+
+function noClicked() {
+    document.getElementById("msg").innerHTML = "Not allowed 😤";
+
+    document.getElementById("angryLeft").style.display = "block";
+    document.getElementById("angryRight").style.display = "block";
+}
+</script>
+
+</body>
+</html>
